@@ -18,17 +18,20 @@ no tooling I can't read end to end.
 | Project | What it is | Stack |
 |---|---|---|
 | **[Vantage](https://github.com/Noxwer-beep/vantage)** | Authorized network recon and vulnerability triage. Deny-by-default scope gate, graded findings, live CLI dashboard, local web console. | `Python` `nmap` `SQLite` |
-| **[Warden](https://github.com/Noxwer-beep/warden)** | Homelab inventory, health and drift. One TOML file declares what should run; it checks, remembers, and reports what changed. | `Python` `TOML` `SQLite` |
+| **[Warden](https://github.com/Noxwer-beep/warden)** | Homelab inventory, health and drift. One TOML file declares what should run; it checks over TCP, UDP, HTTP and TLS, remembers every run, and reports what changed — plus a weekly digest. | `Python` `TOML` `SQLite` |
 | **[Portfolio](https://github.com/Noxwer-beep/portfolio)** | The site itself — hand-written, no build step, dark-first, with a case study for each project. [Live](https://noxwer-beep.github.io/portfolio/) | `HTML` `CSS` `JS` |
 | **[Showcase](https://github.com/Noxwer-beep/showcase)** | Eight different arguments about how a homepage should behave. Same content, eight design directions. [Live](https://noxwer-beep.github.io/showcase/) | `HTML` `CSS` `JS` |
+| **[Blueprint](https://github.com/Noxwer-beep/blueprint)** · **[Aurora](https://github.com/Noxwer-beep/aurora)** · **[Ledger](https://github.com/Noxwer-beep/ledger)** | Three of those directions, published on their own with the reasoning written down. | `HTML` `CSS` `JS` |
 | **[Homelab](https://github.com/Noxwer-beep/homelab-infrastructure)** | How the lab is put together: Proxmox, OPNsense, VLANs, and the reasoning behind each decision. | `Docs` |
 
 ---
 
 ### What I'm on right now
 
-- Refining **Warden** against the real lab — UDP probes, weekly digests, drift history.
-- Building out **Vantage**'s reporting so a finding reads like a paragraph, not a raw line.
+- Scanning the practice lab with **Vantage** — a Metasploitable box is a good argument
+  for honest severity grading.
+- Running **Warden** on a schedule against the real lab, with the digest exported into
+  the documentation vault.
 - Writing the homelab down properly: every decision gets a note, or it didn't happen.
 
 ### How I work
