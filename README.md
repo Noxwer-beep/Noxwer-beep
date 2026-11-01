@@ -4,49 +4,49 @@
 
 <br>
 
-I'm Max — an IT student in Germany who builds infrastructure he can explain, and the
-tools that keep it honest. Most of what is here comes out of one question: *does the
-thing still work the way I said it did?*
+I'm Max, 25, studying IT in Germany. I run a homelab and I build the tools I keep
+needing for it — a scanner, a health checker, a shift toolbox. It's all written by
+hand, tested, and documented well enough that someone else could pick it up.
 
-Everything is hand-written, documented and tested. No frameworks for their own sake,
-no tooling I can't read end to end.
+I'm looking for a **security analyst role**.
 
 ---
 
-### Selected work
+### What I'm working on
 
 | Project | What it is | Stack |
 |---|---|---|
-| **[Vantage](https://github.com/Noxwer-beep/vantage)** | Authorized network recon and vulnerability triage. Deny-by-default scope gate, graded findings, live CLI dashboard, local web console. | `Python` `nmap` `SQLite` |
-| **[Warden](https://github.com/Noxwer-beep/warden)** | Homelab inventory, health and drift. One TOML file declares what should run; it checks over TCP, UDP, HTTP and TLS, remembers every run, and reports what changed — plus a weekly digest. | `Python` `TOML` `SQLite` |
-| **[Portfolio](https://github.com/Noxwer-beep/portfolio)** | The site itself — hand-written, no build step, dark-first, with a case study for each project. [Live](https://noxwer-beep.github.io/portfolio/) | `HTML` `CSS` `JS` |
-| **[Showcase](https://github.com/Noxwer-beep/showcase)** | Eight different arguments about how a homepage should behave. Same content, eight design directions. [Live](https://noxwer-beep.github.io/showcase/) | `HTML` `CSS` `JS` |
-| **[Blueprint](https://github.com/Noxwer-beep/blueprint)** · **[Aurora](https://github.com/Noxwer-beep/aurora)** · **[Ledger](https://github.com/Noxwer-beep/ledger)** | Three of those directions, published on their own with the reasoning written down. | `HTML` `CSS` `JS` |
-| **[Homelab](https://github.com/Noxwer-beep/homelab-infrastructure)** | How the lab is put together: Proxmox, OPNsense, VLANs, and the reasoning behind each decision. | `Docs` |
+| **[Bastet](https://github.com/Noxwer-beep/bastet)** | The night-shift toolbox: IOC triage, log analysis, CVE and ATT&CK lookup, case notes. One prompt instead of nine tabs. | `Python` `SOC` `ATT&CK` |
+| **[Vantage](https://github.com/Noxwer-beep/vantage)** | A scanner I point at my own network. Refuses to run without a scope, and keeps confirmed findings apart from guesses. | `Python` `nmap` `SQLite` |
+| **[Warden](https://github.com/Noxwer-beep/warden)** | One TOML file says what should be running in the lab; Warden checks it over TCP/UDP/HTTP/TLS, remembers every run, and reports what changed. | `Python` `TOML` `SQLite` |
+| **[Homelab](https://github.com/Noxwer-beep/homelab-infrastructure)** | Proxmox, OPNsense, VLANs — and the reasoning behind each decision. | `Docs` |
+| **[Portfolio](https://github.com/Noxwer-beep/portfolio)** | The site itself. Hand-written, no build step. [Live](https://noxwer-beep.github.io/portfolio/) | `HTML` `CSS` `JS` |
+| **[Showcase](https://github.com/Noxwer-beep/showcase)** | Eight layouts for the same page, to see how much the layout decides. [Live](https://noxwer-beep.github.io/showcase/) | `HTML` `CSS` `JS` |
+| **[Blueprint](https://github.com/Noxwer-beep/blueprint)** · **[Aurora](https://github.com/Noxwer-beep/aurora)** · **[Ledger](https://github.com/Noxwer-beep/ledger)** | Three of those layouts, published on their own with the reasoning written down. | `HTML` `CSS` `JS` |
 
 ---
 
-### What I'm on right now
+### Right now
 
-- Scanning the practice lab with **Vantage** — a Metasploitable box is a good argument
-  for honest severity grading.
-- Running **Warden** on a schedule against the real lab, with the digest exported into
-  the documentation vault.
-- Writing the homelab down properly: every decision gets a note, or it didn't happen.
+- Learning the analyst side properly: triage, evidence, and writing it up so someone
+  else can follow it.
+- Running **Warden** on a schedule against the real lab, with the digest dropped into
+  the vault.
+- Scanning my own Metasploitable box with **Vantage** and checking the tool against a
+  target that is supposed to be broken.
 
 ### How I work
 
-> If I can't explain why it is configured that way, it isn't finished.
-
-- **Read the thing.** Parse the XML, read the RFC, check what the header actually says.
-- **Test against reality.** Sockets, real HTTP, real TLS — mocks lie politely.
-- **Document the decision, not the keystrokes.** The runbook is for the person at 3am.
-- **Deny by default.** In firewall rules, in scope gates, and in feature flags.
+- **Read the thing.** The XML, the RFC, the actual header — not the blog post about it.
+- **Test against reality.** Real sockets, real logs, real TLS. Mocks agree with you.
+- **Write it down.** The runbook is for whoever is on at 3am, usually me.
+- **Deny by default.** Firewall rules, scope gates, feature flags.
+- **Small tools.** If I can't read it end to end, I can't trust it mid-incident.
 
 ### Tools I reach for
 
-`Linux` · `Python` · `Bash` · `nmap` · `Proxmox` · `OPNsense` · `SQLite` · `Flask` ·
-`Podman` · `Git` · `Obsidian`
+`Linux` · `Python` · `Bash` · `nmap` · `Wireshark` · `MITRE ATT&CK` · `Proxmox` ·
+`OPNsense` · `SQLite` · `Git` · `Obsidian`
 
 ---
 
