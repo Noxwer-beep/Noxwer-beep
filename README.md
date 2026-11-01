@@ -16,6 +16,8 @@ I'm looking for a **security analyst role**.
 
 | Project | What it is | Stack |
 |---|---|---|
+| **[Clowder](https://github.com/Noxwer-beep/clowder)** | One front door for the lab: reads what the other four tools wrote and ranks everything that needs a look on one scale. | `Python` `SQLite` `Flask` |
+| **[Whisker](https://github.com/Noxwer-beep/whisker)** | Reads a packet capture: who talked to whom, what left the network, what is beaconing home on a fixed clock. | `Python` `PCAP` `tshark` |
 | **[Bastet](https://github.com/Noxwer-beep/bastet)** | The night-shift toolbox: IOC triage, log analysis, CVE and ATT&CK lookup, case notes. One prompt instead of nine tabs. | `Python` `SOC` `ATT&CK` |
 | **[Vantage](https://github.com/Noxwer-beep/vantage)** | A scanner I point at my own network. Refuses to run without a scope, and keeps confirmed findings apart from guesses. | `Python` `nmap` `SQLite` |
 | **[Warden](https://github.com/Noxwer-beep/warden)** | One TOML file says what should be running in the lab; Warden checks it over TCP/UDP/HTTP/TLS, remembers every run, and reports what changed. | `Python` `TOML` `SQLite` |
